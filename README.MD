@@ -8,15 +8,6 @@ You can see the example stories in action [here](https://gentslava.github.io/sto
 
 Thanks to [@jaredpalmer](https://jaredpalmer.com/) for giving us the amazing [formik](https://github.com/jaredpalmer/formik) library and making forms great again.
 
-## Migration to BBB Tech
-
-Note, this package has been migrated to the org: [BBB Tech](https://github.com/gentslava). The only real difference this
-means is that the package needs to be installed with a new command, scoped by the org's slug (i.e. `npm i --save-dev @gentslava/storybook-formik`)
-and to update the path when registering the package in your main.js.
-
-It also means that all future versions will be released under the new package, so please migrate your dependency if you
-want to get future versions.
-
 ## Install
 
 ```sh
