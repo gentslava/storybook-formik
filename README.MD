@@ -4,14 +4,14 @@ A [Storybook](https://storybook.js.org/) Addon and Decorator to wrap Formik Fiel
 
 ![example screenshot](https://user-images.githubusercontent.com/12024258/70381969-9c13b400-194b-11ea-8444-582933bf30f5.png)
 
-You can see the example stories in action [here](https://bbbtech.github.io/storybook-formik/).
+You can see the example stories in action [here](https://gentslava.github.io/storybook-formik/).
 
 Thanks to [@jaredpalmer](https://jaredpalmer.com/) for giving us the amazing [formik](https://github.com/jaredpalmer/formik) library and making forms great again.
 
 ## Migration to BBB Tech
 
-Note, this package has been migrated to the org: [BBB Tech](https://github.com/bbbtech). The only real difference this
-means is that the package needs to be installed with a new command, scoped by the org's slug (i.e. `npm i --save-dev @bbbtech/storybook-formik`)
+Note, this package has been migrated to the org: [BBB Tech](https://github.com/gentslava). The only real difference this
+means is that the package needs to be installed with a new command, scoped by the org's slug (i.e. `npm i --save-dev @gentslava/storybook-formik`)
 and to update the path when registering the package in your main.js.
 
 It also means that all future versions will be released under the new package, so please migrate your dependency if you
@@ -20,7 +20,7 @@ want to get future versions.
 ## Install
 
 ```sh
-npm install --save-dev @bbbtech/storybook-formik
+npm install --save-dev @gentslava/storybook-formik
 ```
 
 Then register the addon in `.storybook/main.js`
@@ -28,7 +28,7 @@ Then register the addon in `.storybook/main.js`
 ```ts
 module.exports = {
   stories: ['../stories/**/*.stories.tsx'],
-  addons: ['@bbbtech/storybook-formik/register'],
+  addons: ['@gentslava/storybook-formik/register'],
 };
 ```
 
@@ -81,7 +81,7 @@ personalInfoSubform.parameters = personalInfoParams;
 This gives you the benefit of rendering formik Fields that are expecting formik context, but also to track the key formik state
 within the storybook panel below.
 
-See the [example stories](https://github.com/bbbtech/storybook-formik/blob/main/stories/) for further examples
+See the [example stories](https://github.com/gentslava/storybook-formik/blob/main/stories/) for further examples
 
 ### Legacy story format
 
@@ -89,7 +89,7 @@ Example with the `storiesOf` syntax.
 
 ```tsx
 import { storiesOf } from '@storybook/react';
-import withFormik from '@bbbtech/storybook-formik';
+import withFormik from '@gentslava/storybook-formik';
 
 import PersonalInfoSubform from '<your_component_path>/PersonalInfoSubform';
 
